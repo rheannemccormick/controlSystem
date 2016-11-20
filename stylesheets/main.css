@@ -1,0 +1,48 @@
+#app {
+    width: 1024px;
+    height: 768px;
+}
+
+#viewer {
+    width: 512px;
+    height: 768px;
+    background-color: darkgrey;
+}
+
+#map {
+    height: 100%;
+}
+
+.viewer-object {
+    /*this is the whole of the object on the map*/
+}
+
+.viewer-object-device {
+  
+}
+
+.viewer-object-info {
+    
+}
+
+#feed {
+    width: 512px;
+    height: 768px;
+    margin-top: -768px;
+    margin-left: 512px;
+    background-color: dimgray;
+}
+
+.feed-item {
+    background-color: deepskyblue;
+    height: 100px;
+    width: 512px;
+}
+
+.feed-item-info {
+
+}
+
+.item-option-buttons {
+    
+}

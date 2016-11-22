@@ -18,11 +18,11 @@
 }
 
 .viewer-object-device {
-  
+
 }
 
 .viewer-object-info {
-    
+
 }
 
 #feed {
@@ -30,19 +30,44 @@
     height: 768px;
     margin-top: -768px;
     margin-left: 512px;
-    background-color: dimgray;
+    background-color: #3f4142;
+	-webkit-box-shadow: inset 10px 10px 36px -18px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 10px 10px 36px -18px rgba(0,0,0,0.75);
+	box-shadow: inset 10px 10px 36px -18px rgba(0,0,0,0.75);
+	position: fixed;
+	overflow-y: scroll;
+	padding-left: 12px;
 }
 
 .feed-item {
-    background-color: deepskyblue;
+    background-color: #adafb0;
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-bottom: 10px;
     height: 100px;
-    width: 512px;
+    width: 490px;
+	clear: both;
+	-webkit-box-shadow: 10px 10px 36px -15px rgba(0,0,0,0.83);
+	-moz-box-shadow: 10px 10px 36px -15px rgba(0,0,0,0.83);
+	box-shadow: 10px 10px 36px -15px rgba(0,0,0,0.83);
+	padding: 10px;
+}
+
+.feed-item-icon {
+	height: 80px;
+	width: 80px;
+	border: 1px solid black;
+
+}
+
+.feed-item-statusbar{
+
 }
 
 .feed-item-info {
 
 }
-
+ 
 .item-option-buttons {
-    
+
 }

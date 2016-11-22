@@ -4,6 +4,10 @@
         <title>control system</title>
         <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
         <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
+		<script src="/libs/jquery.ui.touch-punch.min.js"></script>
+		<script src="/scripts/main.js"></script>
     </head>
     <body>
         <div id="app">
@@ -15,6 +19,9 @@
                 </div>
             </div>
             <div id="feed">
+
+				<!-- first feed item -->
+
                 <div class="feed-item">
                     <div class="feed-item-icon"></div>
                     <div class="feed-item-statusbar"></div>
@@ -24,22 +31,213 @@
                         </div>
                     </div>
                 </div>
+
+				<!-- second feed item -->
+
+				<div class="feed-item">
+                    <div class="feed-item-icon"></div>
+                    <div class="feed-item-statusbar"></div>
+                    <div class="feed-item-info">
+                        <div class="item-option-buttons">
+                            <!--options for on board camera view, delete and view/edit task-->
+                        </div>
+                    </div>
+                </div>
+
+				<!-- third feed item -->
+
+				<div class="feed-item">
+					<div class="feed-item-icon"></div>
+					<div class="feed-item-statusbar"></div>
+					<div class="feed-item-info">
+						<div class="item-option-buttons">
+							<!--options for on board camera view, delete and view/edit task-->
+						</div>
+					</div>
+				</div>
+
+				<!-- fourth feed item -->
+
+				<div class="feed-item">
+					<div class="feed-item-icon"></div>
+					<div class="feed-item-statusbar"></div>
+					<div class="feed-item-info">
+						<div class="item-option-buttons">
+							<!--options for on board camera view, delete and view/edit task-->
+						</div>
+					</div>
+				</div>
+
+				<!-- fifth feed item -->
+
+				<div class="feed-item">
+					<div class="feed-item-icon"></div>
+					<div class="feed-item-statusbar"></div>
+					<div class="feed-item-info">
+						<div class="item-option-buttons">
+							<!--options for on board camera view, delete and view/edit task-->
+						</div>
+					</div>
+				</div>
+
+				<!-- sixth feed item -->
+
+				<div class="feed-item">
+					<div class="feed-item-icon"></div>
+					<div class="feed-item-statusbar"></div>
+					<div class="feed-item-info">
+						<div class="item-option-buttons">
+							<!--options for on board camera view, delete and view/edit task-->
+						</div>
+					</div>
+				</div>
+
+				<!-- seventh feed item -->
+
+				<div class="feed-item">
+					<div class="feed-item-icon"></div>
+					<div class="feed-item-statusbar"></div>
+					<div class="feed-item-info">
+						<div class="item-option-buttons">
+							<!--options for on board camera view, delete and view/edit task-->
+						</div>
+					</div>
+				</div>
+
+				<!-- eighth feed item -->
+
+				<div class="feed-item">
+					<div class="feed-item-icon"></div>
+					<div class="feed-item-statusbar"></div>
+					<div class="feed-item-info">
+						<div class="item-option-buttons">
+							<!--options for on board camera view, delete and view/edit task-->
+						</div>
+					</div>
+				</div>
+
+				<!-- ninth feed item -->
+
+				<div class="feed-item">
+					<div class="feed-item-icon"></div>
+					<div class="feed-item-statusbar"></div>
+					<div class="feed-item-info">
+						<div class="item-option-buttons">
+							<!--options for on board camera view, delete and view/edit task-->
+						</div>
+					</div>
+				</div>
+
+				<!-- tenth feed item -->
+
+				<div class="feed-item">
+					<div class="feed-item-icon"></div>
+					<div class="feed-item-statusbar"></div>
+					<div class="feed-item-info">
+						<div class="item-option-buttons">
+							<!--options for on board camera view, delete and view/edit task-->
+						</div>
+					</div>
+				</div>
+
             </div>
         </div>
          <script>
-      function initMap() {
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 51.5608, lng: -.1631},
-          // Set mapTypeId to SATELLITE in order
-          // to activate satellite imagery.
-          mapTypeId: 'satellite',
-          scrollwheel: false,
-          zoom: 16
-        });
-      }
+		 function initMap() {
+	        // Styles a map with my custom colour scheme.
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	          center: {lat: 51.959596 , lng: 1.274503},
+	          zoom: 12,
+			  zoomControl: false,
+			  mapTypeControl: false,
+			  scaleControl: false,
+			  streetViewControl: false,
+			  rotateControl: false,
+			  fullscreenControl: false,
 
-    </script>
+	          styles: [
+	            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+	            {elementType: 'labels.text.stroke', stylers: [{visibility: 'off'}]},
+	            {elementType: 'labels.text.fill', stylers: [{visibility: 'off',}]},
+	            {
+	              featureType: 'administrative.locality',
+	              elementType: 'labels.text.fill',
+	              stylers: [{visibility: 'off'}]
+	            },
+	            {
+	              featureType: 'poi',
+	              elementType: 'labels.text.fill',
+	              stylers: [{visibility: 'off'}]
+	            },
+	            {
+	              featureType: 'poi.park',
+	              elementType: 'geometry',
+	              stylers: [{color: '#263c3f'}]
+	            },
+	            {
+	              featureType: 'poi.park',
+	              elementType: 'labels.text.fill',
+	              stylers: [{visibility: 'off'}]
+	            },
+	            {
+	              featureType: 'road',
+	              elementType: 'geometry',
+	              stylers: [{color: '#38414e'}]
+	            },
+	            {
+	              featureType: 'road',
+	              elementType: 'geometry.stroke',
+	              stylers: [{color: '#212a37'}]
+	            },
+	            {
+	              featureType: 'road',
+	              elementType: 'labels.text.fill',
+	              stylers: [{visibility: 'off'}]
+	            },
+	            {
+	              featureType: 'road.highway',
+	              elementType: 'geometry',
+	              stylers: [{color: '#022A61'}]
+	            },
+	            {
+	              featureType: 'road.highway',
+	              elementType: 'geometry.stroke',
+	              stylers: [{color: '#1f2835'}]
+	            },
+	            {
+	              featureType: 'road.highway',
+	              elementType: 'labels.text.fill',
+	              stylers: [{visibility: 'off'}]
+	            },
+	            {
+	              featureType: 'transit',
+	              elementType: 'geometry',
+	              stylers: [{color: '#2f3948'}]
+	            },
+	            {
+	              featureType: 'transit.station',
+	              elementType: 'labels.text.fill',
+	              stylers: [{visibility: 'off'}]
+	            },
+	            {
+	              featureType: 'water',
+	              elementType: 'geometry',
+	              stylers: [{color: '#17263c'}]
+	            },
+	            {
+	              featureType: 'water',
+	              elementType: 'labels.text.fill',
+	              stylers: [{visibility: 'off'}]
+	            },
+	            {
+	              featureType: 'water',
+	              elementType: 'labels.text.stroke',
+	              stylers: [{visibility: 'off'}]
+	            }
+	          ]
+	        });
+	      }
+	    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYgeuIxZlt6MLKOhpPIMfbpsfWJDhO1q4&callback=initMap"
         async defer></script>
     </body>
